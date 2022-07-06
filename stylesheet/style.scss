@@ -1,0 +1,60 @@
+@import "reset";
+@import "general";
+@import "about";
+@import "var";
+@import "skill";
+@import "contact";
+
+.header {
+    background: $black;
+    color: $white;
+    position: relative;
+    padding: 2rem 0;
+    .logo {
+        position: fixed;
+        top: 2rem;
+     figure:hover {
+        background-color: #B4A477;
+     }
+    }
+    .nav-bar {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+    ul {
+        padding-right: 2rem;
+    }
+    a {
+        text-decoration: none;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        color: $white; 
+        &:hover {
+            color: #B4A477;
+        }
+    }
+  }
+}
+
+// hero
+
+.hero {
+    padding-top: 9rem;
+    background: $black;
+    height: 90vh;
+    text-align: center;
+    img {
+       border-radius: 50%;
+       height: 400px;
+       width: 400px;
+    } 
+    p {
+        color: $white;
+        padding-top: 2rem;
+        font-size: 2rem;
+        span {
+            color: $crimson;
+        }
+    }
+    
+}

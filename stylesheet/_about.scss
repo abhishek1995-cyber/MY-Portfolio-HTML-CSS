@@ -1,0 +1,114 @@
+@import "var";
+.about{
+    background-color: $black;
+    .heading {
+        font-size: 3rem;
+        color: $white;
+        text-transform: uppercase;
+        padding: 2rem 0;
+        font-weight: bolder;
+        text-align: center;
+        span {
+            color: $crimson;
+        }
+    }
+    .info-container{
+        margin: 0 auto;
+
+        h1{
+            font-size: 2rem;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        .box-container{
+            padding: 1rem 0;
+            .box{
+                h3{
+                    font-size: 1.7rem;
+                    color: $white;
+                    padding: 1rem 0;
+                    font-weight: normal;
+
+                    span{
+                        color: goldenrod;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+    }
+}
+// My Education
+
+.education{
+    background-color: $black;
+    .heading {
+        font-size: 3rem;
+        color: $white;
+        text-transform: uppercase;
+        padding: 2rem 0;
+        font-weight: bolder;
+        text-align: center;
+        span {
+            color: $crimson;
+        }
+    }
+    .box-container{
+        flex-wrap: wrap;
+
+        .box{
+            padding-bottom: 3rem;
+            padding-left: 3.5rem;
+            border-left: .1rem solid $light-color;
+            position: relative;
+
+            i{
+                height: 4.5rem;
+                width: 4.5rem;
+                line-height: 4.5rem;
+                font-size: 1.7rem;
+                border-radius: 50%;
+                background: $crimson;
+                color: $white;
+                text-align: center;
+                position: absolute;
+                top: -1rem; left: -2.5rem;
+                &:hover {
+                   animation: spin-icon 2s ease 1s infinite reverse ;
+                }
+            }   
+            @keyframes spin-icon {
+                0% {background-color: goldenrod;}
+                50% {
+                    background-color: aqua;
+                }
+                100% {
+                    background-color: rgb(245, 143, 10);
+                }
+            }
+
+            span{
+                font-size: 1.7rem;
+                color: $white;
+                border-radius: 5rem;
+                padding: .5rem 1.5rem;
+                background: $light-bg;
+            }
+
+            h3{
+                font-size: 2rem;
+                padding: 1rem 0;
+                color: $white;
+                padding-top: 3rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+                color: goldenrod;
+                line-height: 2;
+            }
+        }
+    }
+}
